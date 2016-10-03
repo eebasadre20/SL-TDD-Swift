@@ -7,6 +7,9 @@
 //
 
 import XCTest
+import Quick
+import Nimble
+
 @testable import FizzBuzz
 
 class GameTests: XCTestCase {
@@ -22,66 +25,66 @@ class GameTests: XCTestCase {
     }
     
     func testGameStartsAtZero() {
-        XCTAssertTrue(game.score == 0)
+        expect(self.game.score).to(equal(0))
     }
     
     func testOnPlayScoreIncremented() {
         game.play("1")
-        XCTAssertTrue(game.score == 1)
+        expect(self.game.score).to(equal(1))
     }
     
     func testIfMoveIsRightFizz() {
         game.score = 2
         let result = game.play("Fizz")
-        XCTAssertEqual(result, true)
+        expect(result).to(equal(true))
     }
     
     func testIfMoveIsWrongFizz() {
         game.score = 1
         let result = game.play("Fizz")
-        XCTAssertEqual(result, false)
+        expect(result).to(equal(false))
     }
     
     func testIfMoveIsRightBuzz() {
         game.score = 4
         let result = game.play("Buzz")
-        XCTAssertEqual(result, true)
+        expect(result).to(equal(true))
     }
     
     func testIfMoveIsWrongBuzz() {
         game.score = 1
         let result = game.play("Buzz")
-        XCTAssertEqual(result, false)
+        expect(result).to(equal(false))
     }
     
     func testIfMoveIsRightFizzBuzz() {
         game.score = 14
         let result = game.play("FizzBuzz")
-        XCTAssertEqual(result, true)
+        expect(result).to(equal(true))
     }
     
     func testIfMoveIsWrongFizzBuzz() {
         game.score = 1
         let result = game.play("FizzBuzz")
-        XCTAssertEqual(result, false)
+        expect(result).to(equal(false))
     }
     
     func testIfNumberMoveRight() {
         game.score = 1
         let result = game.play("2")
-        XCTAssertEqual(result, true)
+        expect(result).to(equal(true))
     }
     
     func testIfNumberMoveWrong() {
         game.score = 2
         let result = game.play("3")
-        XCTAssertEqual(result, false)
+        expect(result).to(equal(false))
     }
 
     func testIfMoveWrongScoreNotIncremented() {
         game.score = 1
         game.play("Fizz")
-        XCTAssertEqual(game.score, 1)
+        expect(self.game.score).to(equal(1))
     }
 
 

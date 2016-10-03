@@ -1,17 +1,16 @@
 # Uncomment this line to define a global platform for your project
-platform :ios, "9.0"
+ platform :ios, '9.2'
 
 target 'FizzBuzz' do
   use_frameworks!
-
-  # Pods for FizzBuzz
+  pod 'SwiftyJSON', :git => 'https://github.com/SwiftyJSON/SwiftyJSON.git', :branch => 'swift2'
 
   target 'FizzBuzzTests' do
-    inherit! :search_paths
+    pod 'Quick', '0.9.0'
+    pod 'Nimble', '3.2.0'
   end
 
   target 'FizzBuzzUITests' do
-    inherit! :search_paths
   end
 
 end
