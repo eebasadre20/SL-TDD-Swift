@@ -8,4 +8,4 @@ The sample application build is FizzBuzz by https://medium.com/@ynzc/getting-sta
  - Quick Framework for BDD
  - Nimble Framework for TDD
 
-I refactored the XCTestCase test to used the 2 framework that I mentioned. ( Not yet finish )
+I refactored the XCTestCase test to used the 2 framework that I mentioned. ( Working in Progress ... )
