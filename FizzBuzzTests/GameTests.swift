@@ -13,7 +13,7 @@ import Nimble
 @testable import FizzBuzz
 
 class GameTests: XCTestCase {
-    
+
     let game = Game()
 
     override func setUp() {

@@ -14,11 +14,6 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-FizzBuzz-FizzBuzzUITests.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Pods-FizzBuzz.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -53,11 +48,6 @@
 			<true/>
 		</dict>
 		<key>F4F90BAAD17DF92F112283FCC675C1EB</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>F894A0135470DF4CC3D974EDDA98CB49</key>
 		<dict>
 			<key>primary</key>
 			<true/>
