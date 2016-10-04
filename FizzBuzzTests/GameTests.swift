@@ -18,6 +18,19 @@ class GameTests: XCTestCase {
 
     override func setUp() {
         super.setUp()
+        
+        describe("#play") {
+            describe("Fizz") {
+                context("when Fizz is correct move") {
+                    let result = self.game.play("Fizz")
+                    
+                    it("return true") {
+                        self.game.score = 2
+                        expect(result).to(equal(true))
+                    }
+                }
+            }
+        }
     }
     
     override func tearDown() {
